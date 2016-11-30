@@ -15,7 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+
+    // We register the default value for the settings here
+    
+    let defaultPref = [Settings.kShowImage : true,
+                       Settings.kSetting1 : "Type 1"
+                       ] as [String : Any]
+    
+    UserDefaults.standard.register(defaults: defaultPref)
+    
+    
+    
+    
     return true
   }
 
