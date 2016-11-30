@@ -30,8 +30,8 @@ class GridAttributePickerVC: UICollectionViewController, UICollectionViewDelegat
     super.viewDidLoad()
     
     updateViews()
-    self.collectionView?.delegate = self
     
+    currentObject = UserDefaults.standard.object(forKey: key) as! String!
     
   }
   
@@ -54,6 +54,18 @@ class GridAttributePickerVC: UICollectionViewController, UICollectionViewDelegat
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GridCell
     
     cell.textLabel.text = options[indexPath.row]
+    
+    cell.iv_selected.isHidden = true
+    
+    if  let currentObject = currentObject as? String {
+      if options[indexPath.row] == currentObject {
+        cell.iv_selected.isHidden = false
+        checkedIndexPath = indexPath
+      }
+      
+    }
+    
+
     
     
     

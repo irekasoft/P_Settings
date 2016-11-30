@@ -52,8 +52,8 @@
 		A3143D061DE7ACF70046CAFC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				A3604E7E1DDF3FCC003E930E /* Settings.storyboard */,
 				A3F3468B1DDF889600E253F9 /* Settings.swift */,
+				A3604E7E1DDF3FCC003E930E /* Settings.storyboard */,
 				A3604E831DDF439B003E930E /* SettingsTVC.swift */,
 				A3143D041DE7ACE20046CAFC /* AttributePickerVC.swift */,
 				A354A3A11DE8CC29005AE0F6 /* GridAttributePickerVC.swift */,

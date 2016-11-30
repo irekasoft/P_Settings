@@ -16,18 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-    // We register the default value for the settings here
+
+    registerDefaults()
+    
+    return true
+    
+  }
+  
+  func registerDefaults(){
     
     let defaultPref = [Settings.kShowImage : true,
-                       Settings.kSetting1 : "Type 1"
-                       ] as [String : Any]
+                       Settings.kSetting1 : Settings.kSetting1Options[0],
+                       Settings.kSetting2 : Settings.kSetting2Options[0],
+                       
+      ] as [String : Any]
     
     UserDefaults.standard.register(defaults: defaultPref)
     
     
-    
-    
-    return true
   }
 
   func applicationWillResignActive(_ application: UIApplication) {

@@ -10,8 +10,9 @@ import UIKit
 
 class SettingsTVC: UITableViewController {
   
-  @IBOutlet weak var lbl_option1: UILabel!
-  @IBOutlet weak var lbl_option2: UILabel!
+  @IBOutlet weak var lbl_setting1: UILabel!
+  @IBOutlet weak var lbl_setting2: UILabel!
+  
   @IBOutlet weak var switch_1: UISwitch!
   @IBOutlet weak var segmented_1: UISegmentedControl!
   
@@ -41,8 +42,8 @@ class SettingsTVC: UITableViewController {
     
     switch_1.setOn(isShowImage, animated:false)
     
-    lbl_option1.text = UserDefaults.standard.string(forKey: Settings.kSetting1)
-    
+    lbl_setting1.text = UserDefaults.standard.string(forKey: Settings.kSetting1)
+    lbl_setting2.text = UserDefaults.standard.string(forKey: Settings.kSetting2)
     
   }
   
@@ -69,13 +70,8 @@ class SettingsTVC: UITableViewController {
       let attributePickerVC = storyboard?.instantiateViewController(withIdentifier: "AttributePickerVC") as! AttributePickerVC
       
       attributePickerVC.key = Settings.kSetting1
-      attributePickerVC.title = "Setting 1"
-      attributePickerVC.options = ["Type 1",
-                                   "Type 2",
-                                   "Type 3",
-                                   "Type 4",
-                                   "Type 5",
-                                   ]
+      attributePickerVC.title = Settings.kSetting1Title
+      attributePickerVC.options = Settings.kSetting1Options
       
       navigationController?.pushViewController(attributePickerVC, animated: true)
       break
@@ -83,13 +79,8 @@ class SettingsTVC: UITableViewController {
       
       let gridAttributePickerVC = storyboard?.instantiateViewController(withIdentifier: "GridAttributePickerVC") as! GridAttributePickerVC
       gridAttributePickerVC.key = Settings.kSetting2
-      gridAttributePickerVC.title = "Setting 2"
-      gridAttributePickerVC.options = ["Type 1",
-                                       "Type 2",
-                                       "Type 3",
-                                       "Type 4",
-                                       "Type 5",
-                                      ]
+      gridAttributePickerVC.title = Settings.kSetting2Title
+      gridAttributePickerVC.options = Settings.kSetting2Options
       
       navigationController?.pushViewController(gridAttributePickerVC, animated: true)
       
