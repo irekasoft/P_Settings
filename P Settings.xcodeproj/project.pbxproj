@@ -17,6 +17,8 @@
 		A3604E801DDF3FCC003E930E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3604E7E1DDF3FCC003E930E /* Settings.storyboard */; };
 		A3604E821DDF41FE003E930E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3604E811DDF41FE003E930E /* Functions.swift */; };
 		A3604E841DDF439B003E930E /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3604E831DDF439B003E930E /* SettingsTVC.swift */; };
+		A3AF31611E2EA35D008425EF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A3AF31601E2EA35D008425EF /* README.md */; };
+		A3AF31631E2EA4F5008425EF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = A3AF31621E2EA4F5008425EF /* 1.png */; };
 		A3F3468A1DDF776D00E253F9 /* DefaultPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3F346891DDF776D00E253F9 /* DefaultPreferences.plist */; };
 		A3F3468C1DDF889600E253F9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3468B1DDF889600E253F9 /* Settings.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		A3604E7F1DDF3FCC003E930E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		A3604E811DDF41FE003E930E /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		A3604E831DDF439B003E930E /* SettingsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
+		A3AF31601E2EA35D008425EF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A3AF31621E2EA4F5008425EF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		A3F346891DDF776D00E253F9 /* DefaultPreferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultPreferences.plist; sourceTree = "<group>"; };
 		A3F3468B1DDF889600E253F9 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +68,8 @@
 		A3604E601DDF3E28003E930E = {
 			isa = PBXGroup;
 			children = (
+				A3AF31601E2EA35D008425EF /* README.md */,
+				A3AF31621E2EA4F5008425EF /* 1.png */,
 				A3604E6B1DDF3E28003E930E /* P Settings */,
 				A3604E6A1DDF3E28003E930E /* Products */,
 			);
@@ -156,6 +162,7 @@
 				A3604E771DDF3E28003E930E /* LaunchScreen.storyboard in Resources */,
 				A3F3468A1DDF776D00E253F9 /* DefaultPreferences.plist in Resources */,
 				A3604E741DDF3E28003E930E /* Assets.xcassets in Resources */,
+				A3AF31631E2EA4F5008425EF /* 1.png in Resources */,
 				A3604E721DDF3E28003E930E /* Main.storyboard in Resources */,
 				A3604E801DDF3FCC003E930E /* Settings.storyboard in Resources */,
 			);
@@ -174,6 +181,7 @@
 				A3604E6D1DDF3E28003E930E /* AppDelegate.swift in Sources */,
 				A3604E821DDF41FE003E930E /* Functions.swift in Sources */,
 				A354A3A21DE8CC29005AE0F6 /* GridAttributePickerVC.swift in Sources */,
+				A3AF31611E2EA35D008425EF /* README.md in Sources */,
 				A3F3468C1DDF889600E253F9 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
